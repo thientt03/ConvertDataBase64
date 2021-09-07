@@ -1,5 +1,6 @@
 package com.example.demo.controller;
 
+import com.example.demo.entities.Convertdata;
 import com.example.demo.service.ConvertService;
 import com.google.gson.Gson;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -20,9 +21,7 @@ public class ConvertRestController {
 
     @ResponseBody
     @PostMapping(path = "/convert-data")
-    public String convertData(@RequestParam("inputdata") String  inputdata){
-        service.getBase(inputdata);
-        Gson gson = new Gson();
-        return gson.toJson(service.getDataConvert(inputdata));
+    public void convertData(@RequestBody Convertdata inputdata){
+        service.getBase(inputdata.getInputdata());
     }
 }
