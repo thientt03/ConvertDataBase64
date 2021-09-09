@@ -1,0 +1,71 @@
+input,
+output,
+button {
+    display: block;
+}
+
+.content {
+    display: flex;
+}
+
+.container {
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+}
+
+input {
+    padding: 10px;
+    width: 200px;
+}
+
+button {
+    padding: 10px;
+    border: none;
+    background-color: rebeccapurple;
+    color: white;
+    cursor: pointer;
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: rgb(80, 6, 153);
+}
+
+output {
+    border: 1px solid rgb(158, 158, 158);
+    padding: 10px;
+    margin-left: 20px;
+    width: 200px;
+}
+
+#image {
+    width: 280px;
+    height: 200px;
+    overflow: auto;
+    word-wrap: break-word;
+    padding: 20px;
+}
+
+.revertButton {
+    padding: 10px 15px;
+}
+
+h2 {
+    padding-top: 50px;
+}
+
+.input {
+    padding-right: 20px;
+}
+
+.input::-webkit-file-upload-button {
+    border: none;
+    background-color: rebeccapurple;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+}
